@@ -1,0 +1,508 @@
+
+	$color-site:black;
+
+.backgroundcolor{
+	background-color:$color-site;
+}
+.rockfest{
+	text-align: center;
+	text-decoration: underline overline #113982;
+	text-transform: uppercase;
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 5em;
+	
+}
+/*IMAGE CON HOVER*/
+.container {
+	position: relative;
+	width: 50%;
+  }
+  
+  .image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	background-color: #45578a;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
+  
+
+.inicio__h2hover{
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Oswald', sans-serif;  
+	font-size: 35px;
+	text-align: center;
+}
+ .inicio__h2hover--minuscula{
+	 font-size: 25px;
+ }
+.alinear{
+	text-align: center;
+}
+
+.lista{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px; 
+	border: solid 1px white;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+
+}
+.link{
+	
+	margin: 10px;
+	font-size: 30px;
+
+	}
+
+
+
+.subtitle{
+	text-align: center;
+	text-transform: uppercase;
+	color: #a6281f; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+
+	
+}
+
+.festival{
+	text-align: center;
+	color: #a6281f; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+
+	padding: 20px;
+	border: solid 5px;
+	margin: 5px;
+}
+
+.transform{
+	color: white;
+
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+  font-family: 'Oswald', sans-serif;
+   border: solid 1px #113982 ;
+  overflow: hidden;
+}
+
+.transform:hover{
+	width: 300px;
+}
+
+.h2inicio{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: lighter;
+	font-size: 2em;
+	letter-spacing: 1px;
+	text-align: center;
+
+}
+
+.h3inicio{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: normal;
+	font-size: 2em;
+	letter-spacing: 1px;
+
+
+}
+
+.pinicio{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: normal;
+	font-size: 1em;
+	letter-spacing: 2px;
+
+}
+
+.footer{
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.h3{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: lighter;
+	font-size: 2em;
+
+
+}
+.p{
+	color: #51c3c9;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: lighter;
+	font-size: 2em;
+
+}
+
+ /*comienza cssde seccion fotografia*/
+
+ @mixin sizes($width,$height) {
+	 width:$width;
+	 height:$height;
+	/* display: $display;
+	 margin-left: $margin-left;
+	 margin-right: $margin-right;*/
+
+ }
+
+
+
+.pictures{
+	 @include sizes (800px ,400px)
+ }
+
+
+.fotografiatitle{
+	color:#73240e;
+	text-align: center;
+	font-size:3em;
+	font-family:  'Oswald', sans-serif;
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	background-color: $color-site;
+}
+.animacion{
+  width: 100px;
+  height: 100px;
+  background-color:#962721;
+  animation-iteration-count: infinite;
+  animation-name: fotografia;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+  
+
+
+@keyframes fotografia {
+   from {top: 0px; background-color:  #962721;}
+
+  to {top: 100px; background-color: #15279e;}
+
+  
+  /* 0% {background-color: #962721;}
+  25%  {background-color: #15279e;}
+  50%  {background-color: #5f27a8;}
+  75% {background-color: #32ad72;}
+  100% {background-color: white;}*/
+}
+.h3{
+	text-align: center;
+	font-size: 2em;
+	font-family: 'Oswald', sans-serif;
+	font-weight:normal;
+}
+
+.bandas{
+	color:#73240e;
+	line-height: underline white;
+	font-family:  'Oswald', sans-serif;
+	text-transform: uppercase; 
+	text-align: center;
+
+}
+/*
+.pictures{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/*
+ /*comienza cssde seccion informacion*/
+
+ .infoh1{
+	text-align: center;
+	
+	text-transform: uppercase;
+	color: #73240e; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+
+	padding: 10px;
+	border: solid 5px;
+	margin: 5px;
+}
+
+.h2info{
+	text-align:center;
+	text-transform: uppercase;
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: underline #45578a;
+
+
+}
+.pinfo{
+	text-align: center;
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.location{
+	text-align:center;
+	text-transform: uppercase;
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+	text-decoration: underline #45578a;
+}
+ .table{
+ 	color: white;
+ }
+/*comienza cssde seccion merch*/
+
+
+.h1inicial{
+	text-align: center;
+	text-transform: uppercase;
+	color: #73240e; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	
+}
+
+.tituloproduc{
+			color: white;
+			font-family: 'Oswald', sans-serif;
+			text-decoration: underline #45578a;
+		}
+
+.listaprendas{
+			color: red;
+}
+
+.listautilidades{
+			color: white;
+}
+
+
+
+ /*comienza cssde seccion hoodies*/
+
+ /*.gridhoodies{
+ 	border: solid 1px red;
+	display: grid;
+	height: 200px;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+
+ }
+
+ .item{
+	border: solid 2px pink;
+	background-color: lightblue;
+	font-size: 20px;*/
+
+.h1hoodies{
+	font-size:3em; 
+	text-align: center;
+	color: #8C0404;
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	}
+
+
+.hoodies{
+			font-size: 1em;
+			text-transform: uppercase;
+			color: #1B8CDD;
+		}
+
+.condiciones{
+	text-transform: uppercase;
+	color: white;
+
+}
+
+.condiciones2{
+	color: white;
+}
+
+/*comienza sección de remeras*/
+
+
+
+
+/*comienza seccion de lineup*/
+
+.lineup{
+	text-align: center;
+	
+	text-transform: uppercase;
+	color: #8C0404; 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	font-weight: bold;
+	font-size: 3em;
+
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	
+
+}
+
+.h2lineup{
+	text-align: center;
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-style: none;
+	font-weight: normal;
+	font-size: 1em;
+}
+
+.playlistlink{
+	text-align: center;
+	padding: 5px;
+	border: solid 3px;
+	margin: 5px;
+}
+
+/*comienza seccion de accesorios*/
+
+@for $var from 0 through 3{
+	.listaccesorios-#{var} {font-size: 20px; color: white;}
+	
+}
+
+.gridaccesorios{
+	border: solid 1px red;
+	display: grid;
+	height: 200px;
+	/*grid-template-rows: 1fr 1fr 1fr;*/
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+	color: red;
+	border: solid 2px lightblue;
+	background-color: blue;
+	font-size: 30px;
+
+.order{
+	justify-self:center; 
+
+	align-self: center;
+}
+
+.accesorios{
+	color: white;
+	font-size:3em; 
+	text-align: center;
+	}
+.condiciones{
+	color: white;
+}
+/*comienza seccion de consultas*/
+
+.consultas{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	 
+	font-family: 'Oswald', sans-serif; 
+	font-style: none;
+	
+	font-size: 3em;
+
+	/*padding: 20px;
+	margin: 5px;
+	border:solid 5px ;*/
+	}
+
+	.infocons{
+		color: white;
+		font-family: 'Oswald', sans-serif;
+
+	}
+
+	.labels{
+		color: white;
+	}
+
+	.footer{
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	}
+
+/*eleccion de merch*/
+.fieldset{
+	color: white;
+	background-color: white;
+}
+
+	}
