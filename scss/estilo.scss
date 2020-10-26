@@ -1,30 +1,77 @@
 
-	$color-site:black;
+	$color-site:rgb(24, 23, 23);
 
 .backgroundcolor{
 	background-color:$color-site;
 }
-.rockfest{
-	text-align: center;
-	text-decoration: underline overline #113982;
-	text-transform: uppercase;
-	color: white; 
-	font-family: 'Oswald', sans-serif; 
-	font-style: none;
-	font-weight: bold;
-	font-size: 5em;
+
 	
+
+/*barra de navegacion*/
+
+
+header {
+	width:100%; 
+	overflow:hidden; 
+	background:#000000;
+	margin-bottom:20px;
+}
+ 
+.wrapper {
+	width:90%; 
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden; 
+}
+ 
+
+header .logo {
+	position:absolute; z-index:2; left:50px; top:1em;
+	width: 10%;
+	color:#f2f2f2;
+	/*line-height:100px;*/
+	padding-left:7%;
+
+}
+ 
+header nav {
+	float:right;
+	line-height:200px;
+}
+ 
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:25px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+	background:#a02a21;
+	border-radius:50px;
+}
+
+/*Carousel*/
+.carousel{
+	width: 100%;
+	text-align: center;
 }
 /*IMAGE CON HOVER*/
 .container {
 	position: relative;
-	width: 50%;
+	width: 30%;
   }
   
   .image {
 	opacity: 1;
 	display: block;
-	width: 100%;
+	width: 30%;
 	height: auto;
 	transition: .5s ease;
 	backface-visibility: hidden;
@@ -50,7 +97,7 @@
   }
   
   .text {
-	background-color: #45578a;
+	background-color: #973a2a;
 	color: white;
 	font-size: 16px;
 	padding: 16px 32px;
@@ -85,8 +132,7 @@
 	
 	margin: 10px;
 	font-size: 30px;
-
-	}
+}
 
 
 
@@ -168,7 +214,15 @@
 	font-weight: bold;
 	font-size: 1em;
 }
-
+/*.buttonfooter{
+	width: 3px;
+	height: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 3%;
+	font-size: x-large;
+	transition: .3s ease all;
+}*/
 .h3{
 	color: white;
 	font-family:  'Oswald', sans-serif;
@@ -179,7 +233,7 @@
 
 }
 .p{
-	color: #51c3c9;
+	color: #943535;
 	font-family:  'Oswald', sans-serif;
 	font-style: none;
 	font-weight: lighter;
@@ -192,6 +246,7 @@
  @mixin sizes($width,$height) {
 	 width:$width;
 	 height:$height;
+	
 	/* display: $display;
 	 margin-left: $margin-left;
 	 margin-right: $margin-right;*/
@@ -201,7 +256,9 @@
 
 
 .pictures{
-	 @include sizes (800px ,400px)
+	align-content: center;
+	 @include sizes (800px ,400px, )
+	 
  }
 
 
@@ -346,7 +403,47 @@
 			color: white;
 }
 
+/*img con hover merch*/
 
+.container {
+	position: relative;
+	width: 40%;
+  }
+  
+  .image {
+	opacity: 1;
+	display: block;
+	width: 40%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	background-color: #a73131;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
 
  /*comienza cssde seccion hoodies*/
 
@@ -401,7 +498,7 @@
 	text-align: center;
 	
 	text-transform: uppercase;
-	color: #8C0404; 
+	color: #ffffff; 
 	font-family: 'Oswald', sans-serif; 
 	font-style: none;
 	font-weight: bold;
@@ -428,6 +525,10 @@
 	padding: 5px;
 	border: solid 3px;
 	margin: 5px;
+}
+
+.imagenlineup{
+	align-items: center;
 }
 
 /*comienza seccion de accesorios*/
