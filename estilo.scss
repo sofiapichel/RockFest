@@ -1,0 +1,580 @@
+
+	$color-site:rgb(24, 23, 23);
+
+.backgroundcolor{
+	background-color:$color-site;
+}
+
+	
+
+/*barra de navegacion*/
+
+
+header {
+	width:100%; 
+	overflow:hidden; 
+	background:#000000;
+	margin-bottom:20px;
+}
+ 
+.wrapper {
+	width:90%; 
+	max-width:1000px; 
+	margin:auto; 
+	overflow:hidden; 
+}
+ 
+
+header .logo {
+	position:absolute; z-index:2; left:50px; top:1em;
+	width: 10%;
+	color:#f2f2f2;
+	/*line-height:100px;*/
+	padding-left:7%;
+
+}
+ 
+header nav {
+	float:right;
+	line-height:200px;
+}
+ 
+header nav a {
+	display:inline-block;
+	color:#fff;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:25px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+ 
+header nav a:hover {
+	background-color: #781e18;
+	border-radius:50px;
+}
+
+/*Carousel*/
+.carousel{
+	width: 100%;
+	text-align: center;
+}
+/*IMAGE CON HOVER*/
+.container {
+	position: relative;
+	width: 40%;
+  }
+  
+  .image {
+	opacity: 1;
+	display: block;
+	width: 30%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	font-size: 30px;
+	padding: 10px 30px;
+  }
+  
+
+.inicio__h2hover{
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Oswald', sans-serif;  
+	font-size: 35px;
+	text-align: center;
+}
+ .inicio__h2hover--minuscula{
+	 font-size: 25px;
+ }
+.alinear{
+	text-align: center;
+}
+
+.lista{
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px; 
+	border: solid 1px white;
+	display: flex;
+	flex-flow: row wrap;
+	align-content: center;
+	justify-content: center;
+
+}
+.link{
+	
+	margin: 10px;
+	font-size: 30px;
+}
+
+
+
+.subtitle{
+	text-align: center;
+	text-transform: uppercase;
+	color: #a6281f; 
+	font-weight: bold;
+	font-size: 3em;
+
+	
+}
+
+.festival{
+	text-align: center;
+	color: #a6281f; 
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+
+	padding: 20px;
+	border: solid 5px;
+	margin: 5px;
+}
+
+.transform{
+	color: white;
+
+  width: 100px;
+  height: 100px;
+  background: rgb(117, 16, 16);
+  transition: width 2s;
+  font-family: 'Oswald', sans-serif;
+   border: solid 1px #f5f5f5 ;
+  overflow: hidden;
+}
+
+.transform:hover{
+	width: 300px;
+}
+
+.h2inicio{
+	color: white;
+	font-family:'Oswald', sans-serif;
+	font-weight: lighter;
+	font-size: 2em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: center;
+
+}
+
+.h3inicio{
+	color: white;
+	font-family:'Oswald', sans-serif;  
+	font-weight: normal;
+	font-size: 2em;
+	text-align: center;
+	letter-spacing: 1px;
+
+
+}
+
+.pinicio{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	text-align: center;
+
+}
+
+.footer{
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+}
+/*.buttonfooter{
+	width: 3px;
+	height: 3px;
+	border: none;
+	cursor: pointer;
+	padding: 3%;
+	font-size: x-large;
+	transition: .3s ease all;
+}*/
+.h3{
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-weight: lighter;
+	font-size: 2em;
+
+
+}
+.p{
+	color: #943535;
+	font-family:  'Oswald', sans-serif;
+	font-weight: lighter;
+	font-size: 2em;
+
+}
+
+ /*comienza cssde seccion fotografia*/
+ .fotografiatitle{
+	color:#ffffff;
+	text-align: center;
+	font-size: 38px;
+	font-family:'Oswald', sans-serif;
+	padding: 20px;
+	margin: 5px;
+	text-transform: uppercase;
+}
+ @mixin sizes($width,$height) {
+	 width:$width;
+	 height:$height;
+	
+	/* display: $display;
+	 margin-left: $margin-left;
+	 margin-right: $margin-right;*/
+
+ }
+ .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+  }
+
+
+/*.pictures{
+	align-content: center;
+	 @include sizes (800px ,400px, )
+	 
+ }*/
+
+.animacion{
+  width: 100px;
+  height: 100px;
+  background-color:#962721;
+  animation-iteration-count: infinite;
+  animation-name: fotografia;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+ 
+.bandas{
+	color:#ffffff;
+
+	font-family:  'Oswald', sans-serif;
+	text-transform: uppercase; 
+	text-align: center;
+	font-size: 2em;
+
+}
+/*
+.pictures{
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+/*
+ /*comienza cssde seccion informacion*/
+
+ 
+
+.h2info{
+	text-align:center;
+	text-transform: uppercase;
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	font-weight: lighter;
+	font-size: 3em;
+	text-decoration: underline#5dc0ee;
+
+
+}
+.pinfo{
+	text-align: center;
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+.location{
+	text-align:center;
+	text-transform: uppercase;
+	color: white; 
+	font-family: 'Oswald', sans-serif; 
+	font-weight: lighter;
+	font-size: 3em;
+	text-decoration: underline #5dc0ee;
+}
+ .table{
+ 	color: rgb(255, 255, 255);
+ }
+ .table-color{
+	 color: #ffffff;
+ }
+.tablecontent{
+	color: #ffffff;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 20px;
+	font-weight: lighter;
+}
+/*comienza cssde seccion merch*/
+
+
+.h1inicial{
+	text-align: center;
+	text-transform: uppercase;
+	color: #73240e; 
+	font-family: 'Oswald', sans-serif; 
+	font-weight: bold;
+	font-size: 3em;
+
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	
+}
+
+.tituloproduc{
+			color: white;
+			font-family: 'Oswald', sans-serif;
+			text-decoration: underline #45578a;
+		}
+
+.listaprendas{
+			color: red;
+}
+
+.listautilidades{
+			color: white;
+}
+
+/*img con hover merch*/
+
+.container {
+	position: relative;
+	width: 40%;
+  }
+  
+  .image {
+	opacity: 1;
+	display: block;
+	width: 40%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	background-color: #a73131;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
+
+ .nav-link{
+		color: rgb(255, 255, 255);
+		background-color: rgb(117, 16, 16);
+	  
+  }
+ /*comienza cssde seccion hoodies*/
+
+ /*.gridhoodies{
+ 	border: solid 1px red;
+	display: grid;
+	height: 200px;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+
+ }
+
+ .item{
+	border: solid 2px pink;
+	background-color: lightblue;
+	font-size: 20px;*/
+
+.h1hoodies{
+	font-size:3em; 
+	text-align: center;
+	color: #8C0404;
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	}
+
+
+.hoodies{
+			font-size: 1em;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
+
+.condiciones{
+	text-transform: uppercase;
+	color: rgb(255, 255, 255);
+
+}
+
+.condiciones2{
+	color: white;
+}
+
+/*comienza sección de remeras*/
+
+
+
+
+/*comienza seccion de lineup*/
+
+.lineup{
+	text-align: center;
+	
+	text-transform: uppercase;
+	color: #ffffff; 
+	font-family: 'Oswald', sans-serif; 
+	font-weight: bold;
+	font-size: 3em;
+
+	padding: 20px;
+	margin: 5px;
+	border:solid 5px ;
+	
+
+}
+
+.h2lineup{
+	text-align: center;
+	color: white;
+	font-family:  'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+}
+
+.playlistlink{
+	text-align: center;
+	padding: 5px;
+	border: solid 3px;
+	margin: 5px;
+}
+
+.imagenlineup{
+	align-items: center;
+}
+
+div {
+	text-align:center;
+	width:100%;
+  }
+ 
+/*comienza seccion de accesorios*/
+
+@for $var from 0 through 3{
+	.listaccesorios-#{var} {font-size: 20px; color: white; text-align: left;}
+	
+}
+
+.gridaccesorios{
+	border: solid 1px red;
+	display: grid;
+	height: 200px;
+	/*grid-template-rows: 1fr 1fr 1fr;*/
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+	color: red;
+	border: solid 2px lightblue;
+	background-color: blue;
+	font-size: 30px;
+
+.order{
+	justify-self:center; 
+
+	align-self: center;
+}
+
+.accesorios{
+	color: white;
+	font-size:3em; 
+	text-align: center;
+	}
+.condiciones{
+	color: white;
+}
+/*comienza seccion de consultas*/
+
+fieldset input {
+	text-align: center;
+  }
+.consultas{
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	 
+	font-family: 'Oswald', sans-serif; 
+	
+	font-size: 4em;
+}
+	.infocons{
+		color-adjust: white;
+		font-family: 'Oswald', sans-serif;
+		font-size: 3em;
+	}
+
+	.labels{
+		color: white;
+	}
+
+	.footer{
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	}
+
+/*eleccion de merch*/
+.fieldset{
+	color: white;
+	
+}
+
+	}
